@@ -14,7 +14,7 @@ The intended usage of regular arguments is to capture and validate a value from
 the user for the application. For example:
 
 ```console
-$ python3 example.py --name SupImDos
+$ python3 example.py --name anastasds
 ```
 
 ```python

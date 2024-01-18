@@ -9,26 +9,26 @@
         <em>Typed Argument Parsing with Pydantic</em>
     </p>
     <a href="https://pypi.python.org/pypi/pydantic-args">
-        <img src="https://img.shields.io/pypi/v/pydantic-argparse.svg">
+        <img src="https://img.shields.io/pypi/v/pydantic-args.svg">
     </a>
     <a href="https://github.com/anastasds/pydantic-args">
-        <img src="https://img.shields.io/pypi/pyversions/pydantic-argparse.svg">
+        <img src="https://img.shields.io/pypi/pyversions/pydantic-args.svg">
     </a>
     <a href="https://github.com/anastasds/pydantic-args/blob/master/LICENSE">
-        <img src="https://img.shields.io/github/license/SupImDos/pydantic-argparse.svg">
+        <img src="https://img.shields.io/github/license/anastasds/pydantic-args.svg">
     </a>
     <br>
     <a href="https://github.com/anastasds/pydantic-args/actions/workflows/tests.yml">
-        <img src="https://img.shields.io/github/actions/workflow/status/supimdos/pydantic-argparse/tests.yml?label=tests">
+        <img src="https://img.shields.io/github/actions/workflow/status/anastasds/pydantic-args/tests.yml?label=tests">
     </a>
     <a href="https://github.com/anasasds/pydantic-args/actions/workflows/tests.yml">
         <img src="https://img.shields.io/coveralls/github/anasasds/pydantic-args">
     </a>
     <a href="https://github.com/anasasds/pydantic-args/actions/workflows/linting.yml">
-        <img src="https://img.shields.io/github/actions/workflow/status/supimdos/pydantic-argparse/linting.yml?label=linting">
+        <img src="https://img.shields.io/github/actions/workflow/status/anastasds/pydantic-args/linting.yml?label=linting">
     </a>
     <a href="https://github.com/anasasds/pydantic-args/actions/workflows/typing.yml">
-        <img src="https://img.shields.io/github/actions/workflow/status/supimdos/pydantic-argparse/typing.yml?label=typing">
+        <img src="https://img.shields.io/github/actions/workflow/status/anastasds/pydantic-args/typing.yml?label=typing">
     </a>
 </div>
 ---
