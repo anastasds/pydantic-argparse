@@ -75,6 +75,9 @@ log_cli_date_format = "%Y%m%dT%H%M%S"
 [tool.coverage.run]
 plugins = ["covdefaults"]
 
+[tool.coverage.report]
+fail_under = 90
+
 [tool.mypy]
 check_untyped_defs = true
 disallow_untyped_defs = true
