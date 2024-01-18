@@ -6,10 +6,7 @@ Validation Errors to human readable messages.
 
 
 # Third-Party
-try:
-    import pydantic.v1 as pydantic
-except ImportError:
-    import pydantic
+import pydantic.v1 as pydantic
 
 # Typing
 from typing import Union

@@ -13,10 +13,7 @@ that do not match any other types and require no special handling are parsed.
 import argparse
 
 # Third-Party
-try:
-    import pydantic.v1 as pydantic
-except ImportError:
-    import pydantic
+import pydantic.v1 as pydantic
 
 # Typing
 from typing import Optional

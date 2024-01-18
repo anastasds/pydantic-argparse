@@ -10,10 +10,7 @@ import textwrap
 
 # Third-Party
 import pytest
-try:
-    import pydantic.v1 as pydantic
-except ImportError:
-    import pydantic
+import pydantic.v1 as pydantic
 
 # Local
 from pydantic2_argparse import utils

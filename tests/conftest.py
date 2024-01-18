@@ -14,10 +14,7 @@ import enum
 import sys
 
 # Third-Party
-try:
-    import pydantic.v1 as pydantic
-except ImportError:
-    import pydantic
+import pydantic.v1 as pydantic
 
 # Local
 from pydantic2_argparse.argparse import actions
@@ -80,7 +77,7 @@ def create_test_field(
     # Construct Pydantic Field
     return pydantic.fields.ModelField.infer(
         name=name,
-        value=pydantic.Field(default, description=description),  # type: ignore[arg-type]
+        value=pydantic.Field(default, description=description),
         annotation=type,
         class_validators=None,
         config=pydantic.BaseConfig,

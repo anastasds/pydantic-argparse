@@ -12,10 +12,7 @@ import argparse
 import enum
 
 # Third-Party
-try:
-    import pydantic.v1 as pydantic
-except ImportError:
-    import pydantic
+import pydantic.v1 as pydantic
 
 # Local
 from .. import utils
@@ -64,8 +61,7 @@ def parse_field(
         {}
         if not is_flag
         else {"const": None}
-        if is_inverted
-        else {"const": list(enum_type)[0]}
+        if is_inverted else {"const": list(enum_type)[0]}  # type: ignore[dict-item]
     )
 
     # Add Enum Field

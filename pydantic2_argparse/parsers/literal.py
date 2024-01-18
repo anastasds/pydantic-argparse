@@ -12,10 +12,7 @@ import argparse
 import sys
 
 # Third-Party
-try:
-    import pydantic.v1 as pydantic
-except ImportError:
-    import pydantic
+import pydantic.v1 as pydantic
 
 # Local
 from .. import utils

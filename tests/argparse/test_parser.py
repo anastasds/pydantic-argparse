@@ -16,10 +16,7 @@ import textwrap
 
 # Third-Party
 import pytest
-try:
-    import pydantic.v1 as pydantic
-except ImportError:
-    import pydantic
+import pydantic.v1 as pydantic
 
 # Local
 import pydantic2_argparse
@@ -201,20 +198,20 @@ def test_create_argparser(
         (Optional[conf.TestEnumSingle], conf.TestEnumSingle.D, "",          conf.TestEnumSingle.D),
 
         # Commands
-        (conf.TestCommand,            ..., "test",               conf.TestCommand()),
-        (conf.TestCommands,           ..., "test cmd_01",        conf.TestCommands(cmd_01=conf.TestCommand())),
-        (conf.TestCommands,           ..., "test cmd_02",        conf.TestCommands(cmd_02=conf.TestCommand())),
-        (conf.TestCommands,           ..., "test cmd_03",        conf.TestCommands(cmd_03=conf.TestCommand())),
-        (conf.TestCommands,           ..., "test cmd_01 --flag", conf.TestCommands(cmd_01=conf.TestCommand(flag=True))),
-        (conf.TestCommands,           ..., "test cmd_02 --flag", conf.TestCommands(cmd_02=conf.TestCommand(flag=True))),
-        (conf.TestCommands,           ..., "test cmd_03 --flag", conf.TestCommands(cmd_03=conf.TestCommand(flag=True))),
-        (Optional[conf.TestCommand],  ..., "test",               conf.TestCommand()),
-        (Optional[conf.TestCommands], ..., "test cmd_01",        conf.TestCommands(cmd_01=conf.TestCommand())),
-        (Optional[conf.TestCommands], ..., "test cmd_02",        conf.TestCommands(cmd_02=conf.TestCommand())),
-        (Optional[conf.TestCommands], ..., "test cmd_03",        conf.TestCommands(cmd_03=conf.TestCommand())),
-        (Optional[conf.TestCommands], ..., "test cmd_01 --flag", conf.TestCommands(cmd_01=conf.TestCommand(flag=True))),
-        (Optional[conf.TestCommands], ..., "test cmd_02 --flag", conf.TestCommands(cmd_02=conf.TestCommand(flag=True))),
-        (Optional[conf.TestCommands], ..., "test cmd_03 --flag", conf.TestCommands(cmd_03=conf.TestCommand(flag=True))),
+        (conf.TestCommand,            ..., "test",               conf.TestCommand()),                                     # type: ignore[call-arg]
+        (conf.TestCommands,           ..., "test cmd_01",        conf.TestCommands(cmd_01=conf.TestCommand())),           # type: ignore[call-arg]
+        (conf.TestCommands,           ..., "test cmd_02",        conf.TestCommands(cmd_02=conf.TestCommand())),           # type: ignore[call-arg]
+        (conf.TestCommands,           ..., "test cmd_03",        conf.TestCommands(cmd_03=conf.TestCommand())),           # type: ignore[call-arg]
+        (conf.TestCommands,           ..., "test cmd_01 --flag", conf.TestCommands(cmd_01=conf.TestCommand(flag=True))),  # type: ignore[call-arg]
+        (conf.TestCommands,           ..., "test cmd_02 --flag", conf.TestCommands(cmd_02=conf.TestCommand(flag=True))),  # type: ignore[call-arg]
+        (conf.TestCommands,           ..., "test cmd_03 --flag", conf.TestCommands(cmd_03=conf.TestCommand(flag=True))),  # type: ignore[call-arg]
+        (Optional[conf.TestCommand],  ..., "test",               conf.TestCommand()),                                     # type: ignore[call-arg]
+        (Optional[conf.TestCommands], ..., "test cmd_01",        conf.TestCommands(cmd_01=conf.TestCommand())),           # type: ignore[call-arg]
+        (Optional[conf.TestCommands], ..., "test cmd_02",        conf.TestCommands(cmd_02=conf.TestCommand())),           # type: ignore[call-arg]
+        (Optional[conf.TestCommands], ..., "test cmd_03",        conf.TestCommands(cmd_03=conf.TestCommand())),           # type: ignore[call-arg]
+        (Optional[conf.TestCommands], ..., "test cmd_01 --flag", conf.TestCommands(cmd_01=conf.TestCommand(flag=True))),  # type: ignore[call-arg]
+        (Optional[conf.TestCommands], ..., "test cmd_02 --flag", conf.TestCommands(cmd_02=conf.TestCommand(flag=True))),  # type: ignore[call-arg]
+        (Optional[conf.TestCommands], ..., "test cmd_03 --flag", conf.TestCommands(cmd_03=conf.TestCommand(flag=True))),  # type: ignore[call-arg]
     ],
 )
 def test_valid_arguments(

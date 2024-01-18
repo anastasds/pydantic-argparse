@@ -11,10 +11,7 @@ dynamically generated validators and environment variable parsers.
 import contextlib
 
 # Third-Party
-try:
-    import pydantic.v1 as pydantic
-except ImportError:
-    import pydantic
+import pydantic.v1 as pydantic
 
 # Typing
 from typing import Any, Callable, Dict, Optional, Type, TypeVar, Union
@@ -134,7 +131,7 @@ def model_with_validators(
             return raw_val
 
         # Monkeypatch `parse_env_var`
-        model.__config__.parse_env_var = __parse_env_var  # type: ignore[assignment]
+        model.__config__.parse_env_var = __parse_env_var  # type: ignore[method-assign]
 
     # Return Constructed Model
     return model

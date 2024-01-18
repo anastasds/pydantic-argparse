@@ -6,11 +6,7 @@ names and formatting argument descriptions.
 
 
 # Third-Party
-try:
-    import pydantic.v1 as pydantic
-except ImportError:
-    import pydantic
-
+import pydantic.v1 as pydantic
 
 def name(field: pydantic.fields.ModelField, invert: bool = False) -> str:
     """Standardises argument name.
