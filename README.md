@@ -11,9 +11,6 @@
     <a href="https://pypi.python.org/pypi/pydantic2-argparse">
         <img src="https://img.shields.io/pypi/v/pydantic2-argparse.svg">
     </a>
-    <a href="https://pepy.tech/project/pydantic2-argparse">
-        <img src="https://pepy.tech/badge/pydantic2-argparse">
-    </a>
     <a href="https://github.com/anastasds/pydantic2-argparse">
         <img src="https://img.shields.io/pypi/pyversions/pydantic2-argparse.svg">
     </a>
