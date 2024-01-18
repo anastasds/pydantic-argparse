@@ -1,6 +1,6 @@
 e<div align="center">
-    <a href="https://pydantic-args.supimdos.com">
-        <img src="https://raw.githubusercontent.com/SupImDos/pydantic-args/master/docs/assets/images/logo.svg" width="50%">
+    <a href="https://pydantic-argparse.supimdos.com">
+        <img src="https://raw.githubusercontent.com/anastasds/pydantic-args/master/docs/assets/images/logo.svg" width="50%">
     </a>
     <h1>
         Pydantic Argparse
@@ -14,23 +14,23 @@ e<div align="center">
     <a href="https://pepy.tech/project/pydantic-args">
         <img src="https://pepy.tech/badge/pydantic-args">
     </a>
-    <a href="https://github.com/SupImDos/pydantic-args">
+    <a href="https://github.com/anastasds/pydantic-args">
         <img src="https://img.shields.io/pypi/pyversions/pydantic-args.svg">
     </a>
-    <a href="https://github.com/SupImDos/pydantic-args/blob/master/LICENSE">
+    <a href="https://github.com/anastasds/pydantic-args/blob/master/LICENSE">
         <img src="https://img.shields.io/github/license/SupImDos/pydantic-args.svg">
     </a>
     <br>
-    <a href="https://github.com/SupImDos/pydantic-args/actions/workflows/tests.yml">
+    <a href="https://github.com/anastasds/pydantic-args/actions/workflows/tests.yml">
         <img src="https://img.shields.io/github/actions/workflow/status/supimdos/pydantic-args/tests.yml?label=tests">
     </a>
-    <a href="https://github.com/SupImDos/pydantic-args/actions/workflows/tests.yml">
+    <a href="https://github.com/anastsds/pydantic-args/actions/workflows/tests.yml">
         <img src="https://img.shields.io/coveralls/github/SupImDos/pydantic-args">
     </a>
-    <a href="https://github.com/SupImDos/pydantic-args/actions/workflows/linting.yml">
+    <a href="https://github.com/anastasds/pydantic-args/actions/workflows/linting.yml">
         <img src="https://img.shields.io/github/actions/workflow/status/supimdos/pydantic-args/linting.yml?label=linting">
     </a>
-    <a href="https://github.com/SupImDos/pydantic-args/actions/workflows/typing.yml">
+    <a href="https://github.com/anastasds/pydantic-args/actions/workflows/typing.yml">
         <img src="https://img.shields.io/github/actions/workflow/status/supimdos/pydantic-args/typing.yml?label=typing">
     </a>
 </div>
