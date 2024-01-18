@@ -57,6 +57,7 @@ select = [
 ]
 ignore = [
     "D401", # imperative mood - overly restrictive
+    "E501", # long lines
 ]
 
 [tool.ruff.per-file-ignores]
