@@ -1,12 +1,12 @@
 # Site
 site_name: Pydantic Argparse
 site_description: Typed Argument Parsing with Pydantic
-site_url: https://github.com/anastasds/pydantic-args
+site_url: https://github.com/anastasds/pydantic2-argparse
 site_author: anastasds
 
 # Repository
-repo_name: anastasds/pydantic-args
-repo_url: https://github.com/anastasds/pydantic-args
+repo_name: anastasds/pydantic2-argparse
+repo_url: https://github.com/anastasds/pydantic2-argparse
 
 # Navigation
 nav:

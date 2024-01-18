@@ -1,5 +1,5 @@
 ## Overview
-`pydantic-args` provides functionality for choice arguments. A choice is a
+`pydantic2-argparse` provides functionality for choice arguments. A choice is a
 command-line argument that allows a restricted set of values. For example:
 `--choice X` or `--choice Y`.
 

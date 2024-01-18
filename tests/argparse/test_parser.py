@@ -22,7 +22,7 @@ except ImportError:
     import pydantic
 
 # Local
-import pydantic_args
+import pydantic2_argparse
 import tests.conftest as conf
 
 # Typing
@@ -64,7 +64,7 @@ def test_create_argparser(
         exit_on_error (bool): Whether to exit on error for testing.
     """
     # Create ArgumentParser
-    parser = pydantic_args.ArgumentParser(
+    parser = pydantic2_argparse.ArgumentParser(
         model=conf.TestModel,
         prog=prog,
         description=description,
@@ -75,7 +75,7 @@ def test_create_argparser(
     )
 
     # Asserts
-    assert isinstance(parser, pydantic_args.ArgumentParser)
+    assert isinstance(parser, pydantic2_argparse.ArgumentParser)
 
 
 @pytest.mark.parametrize(
@@ -235,7 +235,7 @@ def test_valid_arguments(
     model = conf.create_test_model(test=(argument_type, argument_default))
 
     # Create ArgumentParser
-    parser = pydantic_args.ArgumentParser(model)
+    parser = pydantic2_argparse.ArgumentParser(model)
 
     # Parse
     args = parser.parse_typed_args(arguments.split())
@@ -390,7 +390,7 @@ def test_invalid_arguments(
     model = conf.create_test_model(test=(argument_type, argument_default))
 
     # Create ArgumentParser
-    parser = pydantic_args.ArgumentParser(model, exit_on_error=exit_on_error)
+    parser = pydantic2_argparse.ArgumentParser(model, exit_on_error=exit_on_error)
 
     # Assert Parser Raises Error
     with pytest.raises(error):
@@ -408,7 +408,7 @@ def test_help_message(capsys: pytest.CaptureFixture[str]) -> None:
     model = conf.create_test_model()
 
     # Create ArgumentParser
-    parser = pydantic_args.ArgumentParser(
+    parser = pydantic2_argparse.ArgumentParser(
         model=model,
         prog="AA",
         description="BB",
@@ -448,7 +448,7 @@ def test_version_message(capsys: pytest.CaptureFixture[str]) -> None:
     model = conf.create_test_model()
 
     # Create ArgumentParser
-    parser = pydantic_args.ArgumentParser(
+    parser = pydantic2_argparse.ArgumentParser(
         model=model,
         prog="AA",
         description="BB",
@@ -490,7 +490,7 @@ def test_argument_descriptions(
         capsys (pytest.CaptureFixture[str]): Fixture to capture STDOUT/STDERR.
     """
     # Create ArgumentParser
-    parser = pydantic_args.ArgumentParser(conf.TestModel)
+    parser = pydantic2_argparse.ArgumentParser(conf.TestModel)
 
     # Assert Parser Exits
     with pytest.raises(SystemExit):

@@ -20,7 +20,7 @@ except ImportError:
     import pydantic
 
 # Local
-from pydantic_args.argparse import actions
+from pydantic2_argparse.argparse import actions
 
 # Typing
 from typing import Any, Deque, Dict, FrozenSet, List, Optional, Set, Tuple, Type

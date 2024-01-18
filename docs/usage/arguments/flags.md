@@ -1,5 +1,5 @@
 ## Overview
-`pydantic-args` provides functionality for flag arguments. A flag is a
+`pydantic2-argparse` provides functionality for flag arguments. A flag is a
 command-line argument that has no following value. For example: `--flag` or
 `--no-flag`.
 

@@ -9,7 +9,7 @@ import mkdocs_gen_files
 
 
 # Configuration
-PACKAGE = pathlib.Path("pydantic_args")
+PACKAGE = pathlib.Path("pydantic2_argparse")
 DOCS = pathlib.Path("reference")
 
 # Constants

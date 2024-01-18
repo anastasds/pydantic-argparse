@@ -1,6 +1,6 @@
-"""Tests the `pydantic-args` Environment Variables Functionality.
+"""Tests the `pydantic2-argparse` Environment Variables Functionality.
 
-This module provides functional regression tests for the `pydantic-args`
+This module provides functional regression tests for the `pydantic2-argparse`
 environment variable parsing capabilities.
 """
 
@@ -17,7 +17,7 @@ import pytest
 import pytest_mock
 
 # Local
-import pydantic_args
+import pydantic2_argparse
 import tests.conftest as conf
 
 # Typing
@@ -193,7 +193,7 @@ def test_valid_environment_variables(
     model = conf.create_test_model(test=(argument_type, argument_default))
 
     # Create ArgumentParser
-    parser = pydantic_args.ArgumentParser(model)
+    parser = pydantic2_argparse.ArgumentParser(model)
 
     # Construct Environment Variables
     environment_variables: Dict[str, str] = dict([env.split("=")]) if env else {}
@@ -326,7 +326,7 @@ def test_invalid_environment_variables(
     model = conf.create_test_model(test=(argument_type, argument_default))
 
     # Create ArgumentParser
-    parser = pydantic_args.ArgumentParser(model, exit_on_error=exit_on_error)
+    parser = pydantic2_argparse.ArgumentParser(model, exit_on_error=exit_on_error)
 
     # Construct Environment Variables
     environment_variables: Dict[str, str] = dict([env.split("=")]) if env else {}
